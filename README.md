@@ -100,7 +100,9 @@ Try to ssh into the ROBOT COMPUTER from the REMOTE COMPUTER.
   
   `ssh <user on pi>@<ip of pi>`
 
-  `connection refused port 22 closed yada yada`
+   you may run into a problem
+   
+  `connection refused port 22 closed yada yada yada`
   
   Check to see if the ssh server is enabled
   
@@ -110,9 +112,11 @@ Try to ssh into the ROBOT COMPUTER from the REMOTE COMPUTER.
   
   if so, update then start the server and check the status again
   
-  `sudo apt update && sudo apt intall openssh-server`
-  `sudo systemctl start ssh`
-  `sudo systemctl status ssh`
+  ```
+  sudo apt update && sudo apt intall openssh-server
+  sudo systemctl start ssh
+  sudo systemctl status ssh
+  ```
   
   hopefully now you see `Active: active (running)` and you should be able to connect 
   
