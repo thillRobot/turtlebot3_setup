@@ -113,7 +113,7 @@ Try to ssh into the ROBOT COMPUTER from the REMOTE COMPUTER.
   if so, update then start the server and check the status again
   
   ```
-  sudo apt update && sudo apt intall openssh-server
+  sudo apt update && sudo apt install openssh-server
   sudo systemctl start ssh
   sudo systemctl status ssh
   ```
