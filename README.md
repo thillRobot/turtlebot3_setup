@@ -102,6 +102,22 @@ Try to ssh into the ROBOT COMPUTER from the REMOTE COMPUTER.
 
   `connection refused port 22 closed yada yada`
   
+  Check to see if the ssh server is enabled
+  
+  `sudo systemctl status ssh`
+  
+  you may see something like `Active: inactive (dead)`
+  
+  if so, update then start the server and check the status again
+  
+  `sudo apt update && sudo apt intall openssh-server`
+  `sudo systemctl start ssh`
+  `sudo systemctl status ssh`
+  
+  hopefully now you see `Active: active (running)` and you should be able to connect 
+  
+  if it still does not work you can try this below, but you might upset the SSH handshake 
+  
 SSH may work not on a pi3b+ with a fresh image of mate18-arm64, but the solution is shown below.  
 You may read that you have to make some changes to `/etc/ssh/sshd_config` and THIS IS NOT THE FIX that worked for me. 
 Instead the fix is much easier. You must reconfigure the ssh server on the ROBOT COPMUTER (pi) and you should be good to go.
