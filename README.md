@@ -3,7 +3,7 @@ This is a guide to setting up the Turtlebot3 and it may include tools for operat
 
 # Module 8 - Turtlebot3 Setup 
 
-The main objective is to get the turtlebot3 robots working with ros navigation for ME4440. We are following the turtlebot3 manual here. (https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup). 
+The main objective is to get the turtlebot3 robots working with ros navigation for ME4440. We are following the turtlebot3 emanual here. (https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/). 
 
 ### Hardware
   * turtlebot3 waffle pi full robot kit (x2)
